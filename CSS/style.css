@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 1vw;
+  display: flex;
+  word-break: break-word;
+}
+
+nav {
+  width: 31vw;
+  background-color: #d5e7f5;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+}
+nav section {
+  width: 25vw;
+}
+nav h3 {
+  color: #7996a4;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav li {
+  list-style-type: none;
+  margin-left: -25px;
+  margin-bottom: 5px;
+}
+nav .contact li {
+  display: flex;
+  margin-bottom: 10px;
+}
+nav .contact li i {
+  width: 20px;
+}
+nav .contact li .info_contact {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav aside {
+  display: flex;
+  justify-content: space-around;
+}
+nav aside div {
+  text-align: center;
+}
+nav aside div div {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.moncv {
+  width: 70vw;
+  margin-left: -6vw;
+  background-color: #d5e7f5;
+  padding-top: 2.5vw;
+}
+.moncv section {
+  border: solid white 1px;
+  border-top: 10px;
+  border-top-left-radius: 80px;
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+.moncv section h1 {
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 10px;
+}
+.moncv section h1 span {
+  word-spacing: 1px;
+  font-size: 13px;
+  font-style: italic;
+}
+.moncv section h2 {
+  text-align: center;
+  color: blue;
+}
+.moncv section h3 {
+  margin-bottom: -5px;
+  text-transform: uppercase;
+  color: blue;
+}
+.moncv section li {
+  margin-bottom: 15px;
+}
+.moncv section .formations li, .moncv section .parcours li {
+  display: flex;
+}
+.moncv section .formations li span, .moncv section .parcours li span {
+  display: block;
+  min-width: 100px;
+}
+.moncv section .formations li span:nth-child(2n+1), .moncv section .parcours li span:nth-child(2n+1) {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    flex-direction: column-reverse;
+    padding: 0vw;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 90%;
+  }
+  nav section {
+    width: 100%;
+  }
+
+  .moncv {
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .moncv {
+    background-color: white;
+    margin-left: 1vw;
+  }
+  .moncv section {
+    padding: 0px;
+  }
+  .moncv h3 {
+    text-align: center;
+  }
+  .moncv aside {
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
